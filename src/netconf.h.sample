@@ -1,0 +1,18 @@
+/*
+  Here are some definitions for servers to try and get
+  additional configurations. This helps identifying if
+  a network is actually providing all required services
+*/
+
+#define NETNAME   "esp32-net-tester"      // Device Name (for DHCP)
+#define NTPSERVER "0.de.pool.ntp.org"     // NTP Server to use
+
+#define CONNTEST  "google.com"            // Server to connect (TCP)
+#define CONNPORT  80                      // TCP Port for connection
+
+#define RESPSERV  "my.server.com"         // server to connect for response test
+#define RESPPORT  80                      // server port (currently no SSL!)
+#define RESPRSRC  "/response.php"         // resource to request
+#define RESPSUCS  "SUCCESS"               // String to expect for success
+
+#define TIMEZONE  "CET-1CEST,M3.5.0/2,M10.5.0/3"  // Timezone definition
